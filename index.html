@@ -1,0 +1,1621 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="jquery.mobile-1.4.2.min.css" />
+	<script src="jquery-1.10.2.min.js"></script>
+	<script src="jquery.mobile-1.4.2.min.js"></script>
+	<style>
+	html, body { padding: 0; margin: 0; }
+	html, .ui-mobile, .ui-mobile body {
+    	height: 2335px;
+	}
+	.ui-mobile, .ui-mobile .ui-page {
+    	min-height: 2335px;
+	}
+	.ui-content{
+		padding:10px 15px 0px 15px;
+	}
+
+	</style>
+</head>
+
+<body>
+<div data-role="page" id="main" style="max-height:2340px; min-height:2340px;">
+	<div role="main" class="ui-content">
+
+		<h2>Divided, filterable list</h2>
+			<ul data-role="listview" data-filter="true" data-inset="true">
+				<li data-role="list-divider" data-theme="b">A</li>
+				<li><a href="#a" class="ui-link" >a</a></li>
+				<li><a href="#abbr" class="ui-link" >abbr</a></li>
+				<li><a href="#acronym" class="ui-link" >acronym</a></li>
+				<li><a href="#address" class="ui-link" >address</a></li>
+				<li><a href="#applet" class="ui-link" >applet</a></li>
+				<li><a href="#area" class="ui-link" >area</a></li>
+				
+				<li data-role="list-divider" data-theme="b">B</li>
+				<li><a href="#b" class="ui-link" >b</a></li>
+				<li><a href="#base" class="ui-link" >base</a></li>
+				<li><a href="#basefont" class="ui-link" >basefont</a></li>
+				<li><a href="#bdo" class="ui-link" >bdo</a></li>
+                <li><a href="#bgsound" class="ui-link" >bgsound</a></li>
+			    <li><a href="#big" class="ui-link" >big</a></li>
+                <li><a href="#blink" class="ui-link" >blink</a></li>
+                <li><a href="#blockquote" class="ui-link" >blockquote</a></li>
+                <li><a href="#body" class="ui-link" >body</a></li>
+                <li><a href="#br" class="ui-link" >br</a></li>
+                <li><a href="#button" class="ui-link" >button</a></li>
+
+				<li data-role="list-divider" data-theme="b">C</li>
+			    <li><a href="#canvas" class="ui-link" >canvas</a></li>
+                <li><a href="#caption" class="ui-link" >caption</a></li>
+                <li><a href="#center" class="ui-link" >center</a></li>
+                <li><a href="#cite" class="ui-link" >cite</a></li>
+                <li><a href="#code" class="ui-link" >code</a></li>
+                <li><a href="#col" class="ui-link" >col</a></li>
+                <li><a href="#colgroup" class="ui-link" >colgroup</a></li>
+                <li><a href="#comment" class="ui-link" >comment</a></li>
+
+				<li data-role="list-divider" data-theme="b">D</li>
+                <li><a href="#dd" class="ui-link" >dd</a></li>
+                <li><a href="#del" class="ui-link" >del</a></li>
+                <li><a href="#dfn" class="ui-link" >dfn</a></li>
+                <li><a href="#dir" class="ui-link" >dir</a></li>
+                <li><a href="#div" class="ui-link" >div</a></li>
+                <li><a href="#dl" class="ui-link" >dl</a></li>
+                <li><a href="#dt" class="ui-link" >dt</a></li>
+
+				<li data-role="list-divider" data-theme="b">E</li>
+                <li><a href="#em" class="ui-link" >em</a></li>
+                <li><a href="#embed" class="ui-link" >embed</a></li>
+                
+				<li data-role="list-divider" data-theme="b">F</li>
+                <li><a href="#fieldset" class="ui-link" >fieldset</a></li>
+                <li><a href="#form" class="ui-link" >form</a></li>
+                <li><a href="#frame" class="ui-link" >frame</a></li>
+                <li><a href="#frameset" class="ui-link" >frameset</a></li>
+ 
+				<li data-role="list-divider" data-theme="b">H</li>
+                <li><a href="#h1" class="ui-link" >h1</a></li>
+                <li><a href="#h2" class="ui-link" >h2</a></li>
+                <li><a href="#h3" class="ui-link" >h3</a></li>
+                <li><a href="#h4" class="ui-link" >h4</a></li>
+                <li><a href="#h5" class="ui-link" >h5</a></li>
+                <li><a href="#h6" class="ui-link" >h6</a></li>
+                <li><a href="#head" class="ui-link" >head</a></li>
+                <li><a href="#hr" class="ui-link" >hr</a></li>
+                <li><a href="#html" class="ui-link" >html</a></li>
+				
+                <li data-role="list-divider" data-theme="b">I</li>
+                <li><a href="#i" class="ui-link" >i</a></li>
+                <li><a href="#img" class="ui-link" >img</a></li>
+				<li><a href="#iframe" class="ui-link" >iframe</a></li>
+                <li><a href="#input" class="ui-link" >input</a></li>
+                <li><a href="#ins" class="ui-link" >ins</a></li>				
+                <li><a href="#isindex" class="ui-link" >isindex</a></li>				
+				
+				<li data-role="list-divider" data-theme="b">K</li>
+                <li><a href="#kbd" class="ui-link" >kbd</a></li>
+				
+				<li data-role="list-divider" data-theme="b">L</li>
+                <li><a href="#label" class="ui-link" >label</a></li>
+                <li><a href="#legend" class="ui-link" >legend</a></li>
+                <li><a href="#li" class="ui-link" >li</a></li>
+                <li><a href="#link" class="ui-link" >link</a></li>	
+				
+				<li data-role="list-divider" data-theme="b">M</li>
+                <li><a href="#map" class="ui-link" >map</a></li>
+                <li><a href="#marquee" class="ui-link" >marquee</a></li>
+                <li><a href="#menu" class="ui-link" >menu</a></li>
+                <li><a href="#meta" class="ui-link" >meta</a></li>	
+				
+				<li data-role="list-divider" data-theme="b">N</li>
+                <li><a href="#nobr" class="ui-link" >nobr</a></li>
+                <li><a href="#noembed" class="ui-link" >noembed</a></li>
+                <li><a href="#noframes" class="ui-link" >noframes</a></li>
+                <li><a href="#noscript" class="ui-link" >noscript</a></li>	
+				
+				<li data-role="list-divider" data-theme="b">O</li>
+                <li><a href="#object" class="ui-link" >object</a></li>
+                <li><a href="#ol" class="ui-link" >ol</a></li>
+                <li><a href="#optgroup" class="ui-link" >optgroup</a></li>
+                <li><a href="#option" class="ui-link" >option</a></li>	
+				
+				<li data-role="list-divider" data-theme="b">P</li>
+                <li><a href="#p" class="ui-link" >p</a></li>
+                <li><a href="#param" class="ui-link" >param</a></li>
+                <li><a href="#pre" class="ui-link" >pre</a></li>
+                <li><a href="#plaintext" class="ui-link" >plaintext</a></li>
+				
+				<li data-role="list-divider" data-theme="b">Q</li>
+                <li><a href="#q" class="ui-link" >q</a></li>
+				
+				<li data-role="list-divider" data-theme="b">R</li>
+                <li><a href="#rb" class="ui-link" >rb</a></li>
+                <li><a href="#rbc" class="ui-link" >rbc</a></li>
+                <li><a href="#rp" class="ui-link" >rp</a></li>
+                <li><a href="#rtc" class="ui-link" >rtc</a></li>
+                <li><a href="#ruby" class="ui-link" >ruby</a></li>
+  
+				<li data-role="list-divider" data-theme="b">S</li>
+                <li><a href="#s" class="ui-link" >s</a></li>
+                <li><a href="#samp" class="ui-link" >samp</a></li>
+                <li><a href="#script" class="ui-link" >script</a></li>
+                <li><a href="#select" class="ui-link" >select</a></li>
+                <li><a href="#small" class="ui-link" >small</a></li>
+                <li><a href="#span" class="ui-link" >span</a></li>
+                <li><a href="#strike" class="ui-link" >strike</a></li>
+                <li><a href="#strong" class="ui-link" >strong</a></li>
+                <li><a href="#style" class="ui-link" >style</a></li>
+				<li><a href="#sub" class="ui-link" >sub</a></li>
+                <li><a href="#sup" class="ui-link" >sup</a></li>
+				
+				<li data-role="list-divider" data-theme="b">T</li>
+                <li><a href="#table" class="ui-link" >table</a></li>
+                <li><a href="#tbody" class="ui-link" >tbody</a></li>
+                <li><a href="#td" class="ui-link" >td</a></li>
+                <li><a href="#textarea" class="ui-link" >textarea</a></li>
+                <li><a href="#tfoot" class="ui-link" >tfoot</a></li>
+                <li><a href="#th" class="ui-link" >th </a></li>
+                <li><a href="#thead" class="ui-link" >thead</a></li>
+				<li><a href="#title" class="ui-link" >title</a></li>
+                <li><a href="#tt" class="ui-link" >tt </a></li>
+                <li><a href="#tr" class="ui-link" >tr</a></li>
+				
+				<li data-role="list-divider" data-theme="b">U</li>
+                <li><a href="#u" class="ui-link" >u</a></li>
+                <li><a href="#ul" class="ui-link" >ul</a></li>
+				
+				<li data-role="list-divider" data-theme="b">V</li>
+                <li><a href="#var" class="ui-link" >var</a></li>
+				
+				<li data-role="list-divider" data-theme="b">W</li>
+                <li><a href="#wbr" class="ui-link" >wbr</a></li>
+				
+				<li data-role="list-divider" data-theme="b">X</li>
+                <li><a href="#xmp" class="ui-link" >xmp</a></li>
+				</ul>
+    </div>
+</div>
+<div data-role="page" id="a" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>A</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>A</h2>
+		<p>The a tag defines a hyperlink, which is used to link from one page to another.<br>
+
+The most important attribute of the < a > element is the href attribute, which indicates the link's destination.</p>
+<h3>Attributes:</h3>
+<p><ol>
+<li>charset - Specifies the character-set of a linked document</li>
+<li>coords - Specifies the coordinates of a link</li>
+<li>download - Specifies that the target will be downloaded when a user clicks on the hyperlink</li>
+<li>href - Specifies the URL of the page the link goes to</li>
+<li>hreflang - Specifies the language of the linked document</li>
+<li>media - Specifies what media/device the linked document is optimized for</li>
+<li>name - Specifies the name of an anchor</li>
+<li>rel - Specifies the relationship between the current document and the linked document</li>
+<li>rev - Specifies the relationship between the linked document and the current document</li>
+<li>shape - Specifies the shape of a link</li>
+<li>target - Specifies where to open the linked document</li>
+<li>type - Specifies the MIME type of the linked document</li>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<div data-role="page" id="abbr" data-theme="abbr">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>A</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>A</h2>
+		<p>The abbr element is used to provide a fully expanded alternative to an abbreviated phrase. <br>
+		The intention is that browsers and other assistive technologies will interpret this information and present it to the user in an appropriate format when requested.</p><br>
+		The <abbr> tag indicates an abbreviation or an acronym, like "WWW" or "NATO".
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<div data-role="page" id="acronym" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Acronym</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Acronym</h2>
+		<p>The < acronym > tag defines an acronym.<br>
+
+An acronym can be spoken as if it were a word, example NATO, NASA, ASAP, GUI.<br>
+
+By marking up acronyms you can give useful information to browsers, spell checkers, translation systems and search-engine indexers.</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<div data-role="page" id="address" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Address</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Address</h2>
+		<p>The address tag is used to provide contact information. It may or may not contain the physical address of the author.<br>
+		If the < address > element is inside the < body > element, it represents contact information for the document.<br>
+
+If the < address > element is inside an < article > element, it represents contact information for that article.
+		<br>
+		This element is used to mark up contact details for the author or owner of the document, in order that the reader may use these details to contact the document’s owner.
+
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<div data-role="page" id="applet" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Applet</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Applet</h2>
+	<p>The applet tag is used for defining Java applet.<br>
+
+Not supported in HTML5.</p>
+<h3>Required Attributes:</h3>
+<p><ol>
+<li>code - Specifies the file name of a Java applet</li>
+<li>object - Specifies a reference to a serialized representation of an applet</li>
+</ol>
+</p>
+<h3>Optional Attributes:</h3>
+<p><ol>
+<li>align - Specifies the alignment of an applet according to surrounding elements</li>
+<li>alt - Specifies an alternate text for an applet</li>
+<li>archive - Specifies the location of an archive file</li>
+<li>codebase - Specifies a relative base URL for applets specified in the code attribute</li>
+<li>height - Specifies the height of an applet</li>
+<li>hspace - Defines the horizontal spacing around an applet</li>
+<li>name - Defines the name for an applet (to use in scripts)</li>
+<li>vspace - Defines the vertical spacing around an applet</li>
+<li>width - Specifies the width of an applet</li>
+</ol>
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<div data-role="page" id="area" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Area</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Area</h2>
+	<p>The The < area > tag defines an area inside an image-map (an image-map is an image with clickable areas).<br>
+	The < area > element is always nested inside a < map > tag.
+</p>
+<h3>Attributes:</h3>
+<p><ol>
+<li>alt - Specifies an alternate text for the area. Required if the href attribute is present</li>
+<li>coords - Specifies the coordinates of the area</li>
+<li>download - Specifies that the target will be downloaded when a user clicks on the hyperlink</li>
+<li>href - Specifies the hyperlink target for the area</li>
+<li>hreflang - Specifies the language of the target URL</li>
+<li>media - Specifies what media/device the target URL is optimized for</li>
+<li>rel - Specifies the relationship between the current document and the target URL</li>
+<li>shape - Specifies the shape of the area</li>
+<li>target - Specifies where to open the target URL</li>
+<li>type - Specifies the MIME type of the target URL</li>
+
+</ol>
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<div data-role="page" id="b" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>B</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>B</h2>
+		<p>The < b > tag specifies bold text.<br>
+
+The text enclosed between < b > and </ b > tags is formatted to bold.</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="base" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Base</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Base</h2>
+		<p>The base element, which is contained in the head of the document, provides a method for defining the base URL for all links and form submissions on a page. <br>
+		It also provides a common target (in the form of a named window) for all of these links or form submissions.</p>
+<h3>Attributes:</h3>
+<p><ol>
+<li>href - Specifies the base URL for all relative URLs in the page.</li>
+<li>target - Specifies the default target for all hyperlinks and forms in the page</li>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<div data-role="page" id="basefont" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Basefont</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Basefont</h2>
+		<p>The < basefont > tag specifies a default text-color, font-size, or font-family for all the text in a document.<br>
+		Supported only by Internet Explorer 9 and previous versions.</p>
+<h3>Attributes:</h3>
+<p><ol>
+<li>color - Specifies the default color for text in a document.</li>
+<li>face - Specifies the default font for text in a document.</li>
+<li>size - Specifies the default size of text in a document.</li>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="bdo" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Bdo</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Bdo</h2>
+		<p>The bdo element is used to “override the Unicode bidirectional algorithm”, <br>
+		which in layman’s terms means reversing the direction of text enclosed between the opening < bdo > and closing </ bdo > tags.<br>
+		bdo stands for Bi-Directional Override.<br>
+
+The < bdo > tag is used to override the current text direction.</p>
+<h3>Required Attribute:</h3>
+<p><ol>
+<li>dir - Required. Specifies the text direction of the text inside the < bdo > element</li>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="bgsound" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Bgsound</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Bgsound</h2>
+		<p>The bgsound element is used to play an audio file when the page loads and has a handful of
+		attributes to control that audio, including balance, volume, loop and the most important of all, the src attribute which refers to the file required.
+
+</p>
+<h3>Attributes:</h3>
+<p><ol>
+<li>balance - Sets the balance of the audio.</li>
+<li>loop - Defines how many times audio file will play.</li>
+<li>src - Location of the audio file to play.</li>
+<li>volume - Sets the volume of the audio.</li>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<div data-role="page" id="big" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Big</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Big</h2>
+		<p>The size of the text enclosed between < big > and < /big > tags increments by one. <br>
+		It is used to increase font size.<br>
+		</p>
+
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="blink" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Blink</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Blink</h2>
+		<p>The size of the text enclosed between < blink > and < /blink > tags blinks on and off. <br>
+Use this for Text content of any kind (especially the kind that you dont want people to read!).		</p>
+
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="blockquote" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Blockquote</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Blockquote</h2>
+		<p>The < blockquote > tag specifies a section that is quoted from another source.<br>
+		
+</p>
+<h3> Attribute:</h3>
+<p><ol>
+<li>cite - Specifies the source of the quotation</li>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<div data-role="page" id="body" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Body</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Body</h2>
+	<p>The body tag defines the body of the the web page..<br>
+The body element wraps around all of the content that will be displayed on screen (or in other media, such as print), such as headings, paragraphs, images, tables, and so on. </p>
+<h3>Attributes:</h3>
+<p><ol>
+<li>alink - Specifies the color of an active link in a document</li>
+<li>background - Specifies a background image for a document</li>
+<li>bgcolor - Specifies the background color of a document</li>
+<li>link - Specifies the color of unvisited links in a document</li>
+<li>text - Specifies the color of the text in a document</li>
+<li>vlink - Specifies the color of visited links in a document</li>
+
+</ol>
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="br" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Br</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Br</h2>
+		<p>The br tag is used to insert a line-break in between text.<br>
+		It leave no padding or margin in between the two blocks of text separated. 
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="button" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Button</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Button</h2>
+	<p>The button tag defines a clickable button.<br>
+Inside a < button > element you can put content, like text or images. This is the difference between this element and buttons created with the < input > element.</p>
+
+<h3>Attributes:</h3>
+<p><ol>
+<li>autofocus - Specifies that a button should automatically get focus when the page loads</li>
+<li>disabled - Specifies that a button should be disabled</li>
+<li>form - Specifies one or more forms the button belongs to</li>
+<li>formaction - SpecifiesSpecifies where to send the form-data when a form is submitted. Only for type="submit"</li>
+<li>formenctype - Specifies how form-data should be encoded before sending it to a server. Only for type="submit"</li>
+<li>formmethod - Specifies how to send the form-data (which HTTP method to use). Only for type="submit"</li>
+<li>formonvalidate - Specifies that the form-data should not be validated on submission. Only for type="submit"</li>
+<li>formtarget - Specifies where to display the response after submitting the form. Only for type="submit"</li>
+<li>name - Specifies a name for the button</li>
+<li>type - Specifies the type of button</li>
+<li>value - Specifies an initial value for the button</li>
+
+</ol>
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<div data-role="page" id="canvas" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Canvas</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Canvas</h2>
+		<p>The < canvas > tag is used to draw graphics, on the fly, via scripting (usually JavaScript).<br>
+		The < canvas > tag is only a container for graphics, you must use a script to actually draw the graphics.
+</p>
+<h3> Attributes:</h3>
+<p><ol>
+<li>height - Specifies the height of the canvas</li>
+<li>width - Specifies the width of the canvas</li>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<div data-role="page" id="caption" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Caption</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Caption</h2>
+		<p>The caption element provides a means for labeling the following tables content in a visual manner <br>
+		The caption element can only be used once per table and must immediately follow the table start tag.
+
+</p>
+<h3> Attributes:</h3>
+<p><ol>
+<li>align - Defines the alignment of the caption</li>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<div data-role="page" id="center" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Center</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Center</h2>
+		<p>The center tag is used to center align content<br>
+           It is not supported in HTML5.
+</p>
+
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<div data-role="page" id="cite" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Cite</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Cite</h2>
+		<p>The cite tag is used to define the title of a work.<br>
+</p>
+
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="code" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Code</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Code</h2>
+		<p>The code elements purpose is to identify computer code — for example, a snippet of HTML or XML, or some other machine-readable code, be that a server-side language such as PERL, or client-side JavaScript.<br>
+		Most browsers will render code content in a fixed-width font, such as Courier, but this style can be overridden using CSS.
+
+<br>
+</p>
+
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<div data-role="page" id="col" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Col</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Col</h2>
+	<p>The < col > tag specifies column properties for each column within a < colgroup > element.<br>
+The < col > tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row.</p>
+
+<h3>Attributes:</h3>
+<p><ol>
+<li>align - Specifies the alignment of the content related to a col element</li>
+<li>char - Specifies the alignment of the content related to a col element to a character</li>
+<li>charoff - Specifies the number of characters the content will be aligned from the character specified by the char attribute</li>
+<li>span - Specifies the number of columns a col element should span</li>
+<li>valign - Specifies the vertical alignment of the content related to a col element</li>
+<li>width - Specifies the width of a col element</li>
+
+</ol>
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="colgroup" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Colgroup</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Colgroup</h2>
+	<p>The colgroup is a container for a number of col elements, and allows you to set attributes that you might otherwise set at col level on a number of col elements simultaneously—the attributes defined at this higher level apply to all of the child columns.<br>
+
+<h3>Attributes:</h3>
+<p><ol>
+<li>align - Specifies the alignment of the content related to a col element</li>
+<li>char - Specifies the alignment of the content related to a col element to a character</li>
+<li>charoff - Specifies the number of characters the content will be aligned from the character specified by the char attribute</li>
+<li>span - Specifies the number of columns a col element should span</li>
+<li>valign - Specifies the vertical alignment of the content related to a col element</li>
+<li>width - Specifies the width of a col element</li>
+
+</ol>
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<div data-role="page" id="comment" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Comment</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Comment</h2>
+		<p>The comment tag is used to insert comments in the source code. <br> Comments are not displayed in the browsers.
+<br>
+</p>
+
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="dd" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>DD</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>DD</h2>
+		<p>The dd tag is the second part of dl, definition list.<br>
+		While the dt contains the term to be defined, the dd section of the pairing contains the definition description content.
+<br>
+</p>
+
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="del" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Del</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Del</h2>
+		<p>The < del > tag defines text that has been deleted from a document.<br>
+The del element is used to indicate a change that saw the author delete content which appeared in an earlier version of a document.
+
+</p>
+<h3> Attributes:</h3>
+<p><ol>
+<li>cite - Specifies a URL to a document that explains the reason why the text was deleted</li>
+<li>datetime - Specifies the date and time of when the text was deleted</li>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="dfn" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Dfn</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Dfn</h2>
+	<p>The dfn tag defines a definition.<br>
+
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="dir" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Dir</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Dir</h2>
+		<p>The < dir > tag is used to display directory lists.<br>
+
+</p>
+<h3>Optional Attribute:</h3>
+<p><ol>
+<li>compact - Specifies that the list should render smaller than normal</li>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="div" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Div</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Div</h2>
+		<p>The < div > tag is used to create divisions in a web page.<br>
+
+</p>
+<h3>Attribute:</h3>
+<p><ol>
+<li>align - Specifies the alignment of the content inside a < div > element
+</li>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="dl" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>DL</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>DL</h2>
+		<p>The dl tag is used to define a definition list.<br>
+		It consists of two sub tags, dt and dd, the dt contains the term to be defined, and the dd section of the pairing contains the definition description content.
+<br>
+</p>
+
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="dt" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>DT</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>DT</h2>
+		<p>The dt tag is the first part of dl, definition list.<br>
+		While the dt contains the term to be defined, the dd section of the pairing contains the definition description content.
+<br>
+</p>
+
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="em" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>EM</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>EM</h2>
+		<p>The em element is used to emphasize text content, and displays in italics in all current browsers.<br>
+		It provides semantic meaning about the text it contains, effectively saying, “this text is slightly more important than other text here.”
+<br>
+</p>
+
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="embed" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Embed</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Embed</h2>
+	<p>The < embed > tag defines a container for an external application or interactive content (a plug-in).<br>
+
+<h3>Attributes:</h3>
+<p><ol>
+<li>height - Specifies the height of the embedded content</li>
+<li>src - Specifies the address of the external file to embed</li>
+<li>type - Specifies the MIME type of the embedded content</li>
+<li>width - Specifies the width of a embedded content</li>
+
+</ol>
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<div data-role="page" id="fieldset" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Fieldset</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Fieldset</h2>
+	<p>The fieldset is a useful tool for organizing and grouping related items within a form, and has been used for a long time in desktop applications.<br>
+The < fieldset > tag is used to group related elements in a form.</p>
+
+
+<h3>Attributes:</h3>
+<p><ol>
+<li>disabled - Specifies that a group of related form elements should be disabled</li>
+<li>form - Specifies one or more forms the fieldset belongs to</li>
+<li>name - Specifies a name for the fieldset</li>
+
+</ol>
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<div data-role="page" id="form" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Form</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Form</h2>
+	<p>The form element is the container that defines the start and end points for a form that a site visitor can fill in. <br>
+	Any fields that are located between the opening < form > and closing < / form >  tags will be associated with this form. <br>
+	It’s possible to have multiple form elements on a page.</p>
+
+
+<h3>Attributes:</h3>
+<p><ol>
+<li>accept - Specifies the types of files that the server accepts ( that can be submitted through a file upload )</li>
+<li>accept-charset - Specifies the character encodings that are to be used for the form submission</li>
+<li>action - Specifies where to send the form-data when a form is submitted</li>
+<li>autocomplete - Specifies whether a form should have autocomplete on or off</li>
+<li>enctype - Specifies how the form-data should be encoded when submitting it to the server ( only for method="post")</li>
+<li>method - Specifies the HTTP method to use when sending form-data</li>
+<li>name - Specifies the name of a form</li>
+<li>novalidate - Specifies that the form should not be validated when submitted</li>
+<li>target - Specifies where to display the response that is received after submitting the form</li>
+
+</ol>
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="frame" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Frame</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Frame</h2>
+	<p>The frame element defines one particular window within a frameset collection. <br>
+	Each individual frame in a frameset can have different behaviors/appearance, such as scrolling, the ability to resize the frame boundaries and border style.</p>
+
+
+<h3>Attributes:</h3>
+<p><ol>
+<li>frameborder - Specifies whether or not to display a border around a frame</li>
+<li>longdesc - Specifies a page that contains a long description of the content of a frame</li>
+<li>marginheight - Specifies the top and bottom margins of a frame</li>
+<li>marginwidth - Specifies the left and right margins of a frame</li>
+<li>name - Specifies the name of a frame</li>
+<li>noresize - Specifies that a frame is not resizable</li>
+<li>scrolling - Specifies whether or not to display scrollbars in a frame</li>
+<li>src - Specifies the URL of the document to show in a frame</li>
+
+</ol>
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="frameset" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Frameset</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Frameset</h2>
+	<p>The frame element deThe frameset is used to group a collection of windows together, sometimes horizontally (using the rows attribute), sometimes vertically (using the cols attribute), or even a combination of horizontal and vertical arrangements. <br>
+	Each child window inside the frameset is defined by the frame element.</p>
+
+
+<h3>Attributes:</h3>
+<p><ol>
+<li>cols - Specifies the number and size of columns in a frameset</li>
+<li>rows - Specifies the number and size of rows in a frameset</li>
+
+
+</ol>
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="h1" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>H1</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>H1</h2>
+	<p>The h1 element is used to indicate the most important (or highest-level) heading on the page.<br>
+</p>
+
+<h3>Attributes:</h3>
+<p><ol>
+<li>align - Specifies the alignment of a heading</li>
+
+
+</ol>
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<div data-role="page" id="h2" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>H2</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>H2</h2>
+	<p>The h2 element is used to indicate a heading whose level of importance is exceeded only by h1. <br>
+	A document may have several h2<br>
+</p>
+
+<h3>Attributes:</h3>
+<p><ol>
+<li>align - Specifies the alignment of a heading</li>
+
+
+</ol>
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<div data-role="page" id="h3" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>H3</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>H3</h2>
+	<p>The h2 element is used to indicate a heading whose level of importance is exceeded by h1 and h2. <br>
+	A document may have several h3<br>
+</p>
+
+<h3>Attributes:</h3>
+<p><ol>
+<li>align - Specifies the alignment of a heading</li>
+
+
+</ol>
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="h4" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>H4</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>H4</h2>
+	<p>The h2 element is used to indicate a heading whose level of importance is exceeded by h1, h2 and h3. <br>
+	A document may have several h4.<br>
+</p>
+
+<h3>Attributes:</h3>
+<p><ol>
+<li>align - Specifies the alignment of a heading</li>
+
+
+</ol>
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="h5" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>H5</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>H5</h2>
+	<p>The h2 element is used to indicate a heading whose level of importance is exceeded by h1, h2, h3 and h4. <br>
+	A document may have several h5.<br>
+</p>
+
+<h3>Attributes:</h3>
+<p><ol>
+<li>align - Specifies the alignment of a heading</li>
+
+
+</ol>
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="h6" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>H6</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>H6</h2>
+	<p>The heading with least importance is h6. <br>
+	A document may have several h6s.<br>
+</p>
+
+<h3>Attributes:</h3>
+<p><ol>
+<li>align - Specifies the alignment of a heading</li>
+
+
+</ol>
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+
+<div data-role="page" id="head" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>Head</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Head</h2>
+	<p>The head element is the wrapper for all the head elements that, collectively, instruct the browser where to find style sheets, 
+	or define relationships that the document has to others in the web site (link); provide essential meta information (meta); 
+	and point to or include scripts that the document will need to apply later on (script).<br>
+	The following elements can go inside the < head > element:
+<ul>
+<li>title(this element is required in the head section)</li> 
+<li>style</li>
+<li>base</li>
+<li>link</li>
+<li>meta</li>
+<li>script</li>
+<li>noscript</li>
+</ul>
+</p>
+
+<h3>Attributes:</h3>
+<p><ol>
+<li>profile - Specifies a URL to a document that contains a set of rules. The rules can be read by browsers to clearly understand the information in the <meta> tag's content attribute</li>
+
+
+</ol>
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="hr" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>HR</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>HR</h2>
+	<p>The < hr > tag defines a thematic break in an HTML page (e.g. a shift of topic).
+
+The < hr > element is used to separate content (or define a change) in an HTML page.<br>
+In HTML5, the hr tag defines a thematic break.<br>
+
+In HTML 4.01, the hr tag represents a horizontal rule.</p>
+
+<h3>Attributes:</h3>
+<p><ol>
+<li>align - Specifies the alignment of a hr element</li>
+<li>noshade - Specifies that a hr element should render in one solid color (noshaded), instead of a shaded color</li>
+<li>size - Specifies the height of a hr element</li>
+<li>width - Specifies the width of a hr element</li>
+</ol>
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="html" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>HTML</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>HTML</h2>
+	<p>The HTML tag defines the text enclosed is a HTML document.<br>
+	The html tag is the container for all other HTML elements (except for the !DOCTYPE tag).
+
+	</p>
+
+<h3>Attributes:</h3>
+<p><ol>
+<li>manifest - Specifies the address of the document's cache manifest (for offline browsing)</li>
+<li>xmlns - Specifies the XML namespace attribute (If you need your content to conform to XHTML)</li>
+</ol>
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+
+<div data-role="page" id="img" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>IMG</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>IMG</h2>
+	<p>The img tag is used to define an image in HTML document.<br>
+	The img tag does not have an end tag in HTML.
+	</p>
+
+
+<h3>Attributes:</h3>
+<p><ol>
+<li>align - Specifies the alignment of an image according to surrounding elements</li>
+<li>alt - Specifies an alternate text for an image</li>
+<li>border - Specifies the width of the border around an image</li>
+<li>crossorigin - Allow images from third-party sites that allow cross-origin access to be used with canvas</li>
+<li>height - Specifies the height of an image</li>
+<li>hspace - Specifies the whitespace on left and right side of an image</li>
+<li>ismap - Specifies an image as a server-side image-map</li>
+<li>longdesc - Specifies the URL to a document that contains a long description of an imag</li>
+<li>src - Specifies the URL of an image</li>
+<li>usemap - Specifies an image as a client-side image-map</li>
+<li>vspace - Specifies the whitespace on top and bottom of an image</li>
+<li>width - Specifies the width of an image</li>
+</ol>
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="i" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>I</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>I</h2>
+	<p> The text eclosed between the < i > and < /i > tags is formatted to italic.<br>
+	The i tag can be used to indicate a technical term, a phrase from another language, a thought, or a ship name, etc.
+
+
+	</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<div data-role="page" id="iframe" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>iframe</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>iframe</h2>
+	<p>The iframe tag specifies an inline frame.<br>
+	An inline frame is used to embed another document within the current HTML document.
+
+	</p>
+
+
+<h3>Attributes:</h3>
+<p><ol>
+<li>align - Specifies the alignment of iframe according to surrounding elements</li>
+<li>frameborder - Specifies whether or not to display a border around an iframe</li>
+<li>height - Specifies the height of an iframe</li>
+<li>longdesc - Specifies a page that contains a long description of the content of an iframe</li>
+<li>marginheight - Specifies the top and bottom margins of the content of an iframe</li>
+<li>marginwidth - Specifies the left and right margins of the content of an iframe</li>
+<li>name - Specifies the name of an iframe</li>
+<li>sandbox - Enables a set of extra restrictions for the content in the iframe</li>
+<li>scrolling - Specifies whether or not to display scrollbars in an iframe</li>
+<li>seamless - Specifies that the iframe should look like it is a part of the containing document</li>
+<li>src - Specifies the URL of an image</li>
+<li>srcdoc - Specifies the HTML content of the page to show in the iframe</li>
+<li>width - Specifies the width of an image</li>
+</ol>
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<div data-role="page" id="input" data-theme="a">
+
+	<div data-role="header"   data-position="fixed" data-theme="b">
+	     <a href="#main" data-role="button" data-icon="back" data-back="true" class="ui-btn-left">Back</a>
+		 <h1>input</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>input</h2>
+	<p>The input tag specifies an input field where the user can enter data.<br>
+input elements are used within a form element to declare input controls that allow users to input data.
+
+
+	</p>
+
+
+<h3>Attributes:</h3>
+<p><ol>
+<li>accept - Specifies the types of files that the server accepts, only for type="file"</li>
+<li>align - Specifies the alignment of an image input only for type="image"</li>
+<li>alt - Specifies an alternate text for images only for type="image"</li>
+<li>autocomplete - Specifies whether an input element should have autocomplete enabled</li>
+<li>autofocus - Specifies that an input element should automatically get focus when the page loads</li>
+<li>checked - Specifies that an input element should be pre-selected when the page loads for type="checkbox" or type="radio"</li>
+<li>disabled - Specifies that an input element should be disabled</li>
+<li>form - Specifies one or more forms the input element belongs to</li>
+<li>formaction - Specifies the URL of the file that will process the input control when the form is submitted, for type="submit" and type="image"</li>
+<li>formenctype - Specifies how the form-data should be encoded when submitting it to the server, for type="submit" and type="image"</li>
+<li>formmethod - Defines the HTTP method for sending data to the action URL for type="submit" and type="image"</li>
+<li>formonvalidate - Defines that form elements should not be validated when submitted</li>
+<li>formtarget - Specifies where to display the response that is received after submitting the form for type="submit" and type="image"</li>
+<li>height - Specifies the height of an input element only for type="image"</li>
+<li>list - Refers to a datalist element that contains pre-defined options for an input element</li>
+<li>max - Specifies the maximum value for an input element</li>
+<li>maxlength - Specifies the maximum number of characters allowed in an input element</li>
+<li>min - Specifies a minimum value for an input element</li>
+<li>multiple - Specifies that a user can enter more than one value in an input element</li>
+<li>name - Specifies the name of an input element</li>
+<li>pattern - Specifies a regular expression that an input element's value is checked against</li>
+<li>placeholder - Specifies a short hint that describes the expected value of an input element</li>
+<li>readonly - Specifies that an input field is read-only</li>
+<li>required - Specifies that an input field must be filled out before submitting the form</li>
+<li>size - Specifies the width, in characters, of an input element</li>
+<li>src - Specifies the URL of the image to use as a submit button, only for type="image"</li>
+<li>step - Specifies the legal number intervals for an input field</li>
+<li>type - Specifies the type input element to display</li>
+<li>value - Specifies the value of an input element</li>
+<li>width - Specifies the width of an input element, only for type="image"</li>
+
+</ol>
+</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>HTML CheatSheet</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+
+</div>
+</div>
+</div>
+</body>
+</html>
